@@ -1,0 +1,15 @@
+---
+  - name: Crear el archivo datos_equipo.txt con información del sistema
+    copy:
+      dest: "/home/adrianD/UTN-FRA_SO_Examenes/202406/ansible/tmp/2do_parcial/equipo/datos_equipo.txt"
+      content: |
+        IP: {{ ansible_default_ipv4.address }}
+        Distribucion: {{ ansible_distribution }} {{ ansible_distribution_version }}
+        Cantidad de cores: {{ ansible_processor_cores }}
+
+  - name: Crear el archivo datos_alumno.txt con contenido estático
+    copy:
+      dest: "/home/adrianD/UTN-FRA_SO_Examenes/202406/ansible/tmp/2do_parcial/alumno/datos_alumno.txt"
+      content: |
+        Nombre: Diego
+        Division: 116

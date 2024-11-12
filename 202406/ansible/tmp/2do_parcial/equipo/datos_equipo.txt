@@ -1,0 +1,3 @@
+IP: 10.0.2.15
+Distribucion: Ubuntu 22.04
+Cantidad de cores: 2
